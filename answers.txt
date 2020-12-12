@@ -1,0 +1,8 @@
+a. If we had to do this search manually it would have taken us a long time.
+b. My conclusion is that writing a script instead of search by hand is efficient, convenient, and simply fast. 
+I can think of a lot of tasks and applications that can be implemented this way, for example:
+- Find and collect the email addresses/phone numbers in cv.
+- Search for positive and negative words in an article to understand and even classify the writer's opinion in a fast way. 
+c. If I would have liked to hold an updated result.csv file, I could have done it by adding to the first wget command the flag:  '-S' That save the time stamp of the HTML file, and then add a line that runs every one hour the same wget command but with the flag '-N ' that checks if the remote file has changed since last downloading, and download it if it has. 
+After having the updated addresses list I will download and search in it only if the link is new.
+In the end, I can delete all the links in the results file that no longer exist in the updated addresses list.
